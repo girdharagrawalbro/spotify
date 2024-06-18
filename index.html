@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="includes/style.css" />
+    <link rel="shortcut icon" href="resouces/logo.svg" type="image/x-icon">
+    <title>Spotify - Web Player : Music for you</title>
+</head>
+<body>
+    <div class="container flex">
+        <div class="left" id="left">
+            <div class="box">
+                <div>
+                    <ul>
+                        <li class="active">
+                            <img class="icon" src="resouces/home.svg" alt="Sample SVG">
+                            Home
+                            <span class="hamburg" id="close" style="right: 20px;">X</span>
+                        </li>
+                        <br>
+                        <li>
+                            <img class="icon" src="resouces/search.svg" alt="Sample SVG">
+                            Search
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="box">
+                <div class="library active flex j-bet a-cen">
+                    <div class="active a-cen flex">
+                        <img class="icon" src="resouces/lib.svg" alt="Sample SVG">
+                        Your Library
+                    </div>
+                    <div>
+                        <img class="" src="resouces/plus.svg" alt="Sample SVG" width="18px">
+                    </div>
+                </div>
+                <br>
+                <div class="list">
+                    <button class="btn artist-btn light-btn">Artist</button>
+                    <br>
+                    <br>
+                    <div class="artist-search">
+                        <input type="search" placeholder="Search in Your Library">
+                        <label for="" class="gray">Recents </label>
+                    </div>
+                    <br>
+                    <div class="artist-list">
+                        <div class="liked-songs">
+                            <div class="flex a-cen">
+                                <div class="border" style="padding: .5rem .8rem;border-radius: 8px;margin-right: 10px;">
+&hearts;
+                                </div>
+                                    <div>
+                                    <h4>
+                                        Liked Songs
+                                    </h4>
+                                    <h5 class="gray">
+                                        Playlist . 2 songs
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="artist-list">
+                            <div class="flex a-cen">
+                                <ul id="artistList">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right log-right" id="right">
+            <div class="log-top flex j-bet" id="navbar">
+                <div class="flex a-cen navigation">
+                    <div>
+                        <img src="resouces/smaller.svg" alt="Sample SVG" width="18px">
+                    </div>
+                    <div>
+                        <img src="resouces/greater.svg" alt="Sample SVG" width="18px">
+                    </div>
+                </div>
+                <div class="log-sec flex a-cen" style="gap: 1rem;">
+                    <button class="btn">
+                        Explore Premium
+                    </button>
+                    <button class="btn light-btn">
+                        <div class="flex a-cen">
+                            <img src="resouces/install.svg" alt="instal" width="20px" style="margin-right: 5px;">
+                            Install App
+                        </div>
+                    </button>
+                    <button class="btn light-btn">
+                        <div class="flex a-cen">
+                            <img src="resouces/bell.svg" alt="bell" width="20px" style="margin-right: 5px;"> Notify
+                        </div>
+                    </button>
+                    <button class="btn light-btn">G</button>
+                </div>
+                <div class="name-logo" id="name-logo">
+                    <img src="resouces/name-logo.svg" alt="Sample SVG" width="100px" style="padding-left: 1rem;">
+                </div>
+                <div class="hamburg" >
+                    <img id="hamburg" src="resouces/hamburg.svg" alt="Sample SVG" width="30px"   >
+                </div>
+            </div>
+            <div class="box artist-box">
+                <div class="about-artist">
+                    <br>
+                    <br>
+                    <h5>
+                        Verified Artist
+                    </h5>
+                    <h1>
+                  Girdhar Agrawal
+                    </h1>
+                    <h4>
+                        35,000,00 monthly listeners
+                    </h4>
+                </div>
+                <div class="songs">
+                    <div class="play-btn flex a-cen">
+                        <img src="https://cdn-icons-png.freepik.com/512/8212/8212668.png" alt="" width="90px"> <button
+                            class="light-btn btn">Follow</button>
+                    </div>
+                    <div class="song-list">
+                        <h2>Popular</h2>
+                        <br>
+                        <ol type="1" id="songList">
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <div class="flex j-bet a-cen">
+                    <div>
+                        <h2>
+                            Fans also like
+                        </h2>
+                    </div>
+                    <div>
+                        <h4 class="gray">Show all</h4>
+                    </div>
+                </div>
+                <br>
+                <div class="artist-logo">
+                    <div class="artist-card">
+                        <img src="https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca" alt=""
+                            class="artist-img">
+                        <img src="https://cdn-icons-png.freepik.com/512/8212/8212668.png" alt="" class="play-btn"
+                            width="70px">
+                        <h4>Pritam</h4>
+                        <h5 class="gray">Artist</h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="right-links flex">
+                <ul>
+                    <li class="head">
+                        Company
+                    </li>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        Jobs
+                    </li>
+                    <li>
+                        For the Record
+                    </li>
+                </ul>
+                <ul>
+                    <li class="head">
+                        Communities
+                    </li>
+                    <li>
+                        For Artists
+                    </li>
+                    <li>
+                        For Developers
+                    </li>
+                    <li>
+                        Advertising
+                    </li>
+                    <li>Investors</li>
+                    <li>Vendors</li>
+                </ul>
+                <ul>
+                    <li class="head">
+                        Usefull links
+                    </li>
+                    <li>Support</li>
+                    <li>Free Mobile App</li>
+                </ul>
+                <ul>
+                    <li class="head">
+                        Spotify Plans
+                    </li>
+                </ul>
+                <ul class="flex" style="">
+                    <li>
+                        <a href="">
+                            <img src="resouces/insta.svg" alt="insta">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="resouces/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><img src="resouces/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="links flex j-bet a-cen">
+                <ul class="flex right-bootom-links">
+                    <li>
+                        Legal
+                    </li>
+                    <li>
+                        Safety & Privacy Center
+                    </li>
+                    <li>
+                        Privacy Policy
+                    </li>
+                    <li>
+                        Cookies
+                    </li>
+                    <li>
+                        About Ads
+                    </li>
+                    <li>
+                        Accessibility
+                    </li>
+                </ul>
+                <h4 class="gray">&copy; 2024 Spotify AB </h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="flex player">
+        <div class="flex a-cen j-bet playing-song" style="width: 22vw;">
+            <div class="flex ">
+                <div>
+                    <h5 id="song-playing">
+                        Nothing to show
+                    </h5>
+                    <h5 class="gray">
+                        Girdhar Agrawal
+                    </h5>
+                </div>
+            </div>
+                   </div>
+        <div class="play-bar " id="play-bar">
+            <div class="flex a-cen play-controls" id="play-controls" >
+                <img src="resouces/shuffel.svg" id="shuffle" alt="Shuffle">
+                <img src="resouces/previous.svg" id="previous" alt="Previous">
+                <img src="resouces/play.svg" id="play" alt="Play" style="background-color: white; border-radius: 50%; width: 45px; height: 45px;margin-bottom: 5px;">
+                <img src="resouces/pause.svg" id="pause" alt="Pause" style="background-color: white; border-radius: 50%; width: 45px; height: 45px;margin-bottom: 5px;display: none;">
+                            <img src="resouces/next.svg" id="next" alt="Next">
+                <img src="resouces/repeat.svg" id="repeat" alt="Repeat">
+            </div>
+            <div>
+                <div class="seekbar flex a-cen gap" >
+  <span id="pduration">00:00</span>     <input type="range" id="progress" value="0" min="0" max="100" class="progress">  <span id="tduration"> 00:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="controls flex a-cen">
+    <img src="resouces/high-vol.svg" alt="">
+    <input type="range" name="" id="vol-controller" class="vol-controller" style="margin-left: 5px;">
+        </div>
+    </div>
+</body>
+<script src="includes/script.js"></script>
+</html>

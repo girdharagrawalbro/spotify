@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+/* utility classes start */
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.j-cen {
+    justify-content: center;
+}
+.j-bet {
+    justify-content: space-between;
+}
+.j-aro {
+    justify-content: space-around;
+}
+.a-cen {
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+ol {
+    list-style: decimal;
+}
+li {
+    display: flex;
+    align-items: center;
+    /* Align vertically */
+    padding: 0.3rem;
+}
+.border {
+    border: 1px solid white;
+}
+.active {
+    color: #a1a1a1
+}
+.active svg {
+    fill: #a1a1a1;
+}
+/* Utility class end  */
+.container {
+    padding: 1rem;
+    gap: 10px;
+}
+.gap {
+    gap: 10px;
+}
+.navigation {
+    gap: 20px;
+}
+.navigation div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left {
+    width: 25vw;
+}
+.right {
+    flex-grow: 1;
+    height: 83vh;
+    overflow-y: scroll;
+    /* Enable vertical scrolling */
+    width: 75vw;
+    position: relative;
+}
+.right::-webkit-scrollbar {
+    width: 0;
+    /* Hide the scrollbar */
+}
+.right .top {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    padding: .1rem 1rem 1rem .5rem;
+}
+.box {
+    background-color: #121212;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 20px;
+}
+.icon {
+    width: 25px;
+    margin-right: 1rem;
+}
+.links ul li {
+    font-size: 12px;
+    font-weight: 300;
+    color: #a1a1a1;
+}
+.dynamic::-webkit-scrollbar {
+    width: 0;
+}
+.dynamic {
+    height: 21vh;
+    overflow-y: scroll;
+}
+.dynamic-box {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 1rem;
+}
+.dynamic-box h5 {
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+a,button,img{
+    cursor: pointer;
+
+}
+.btn {
+    border-radius: 20px;
+    color: #121212;
+    border: none;
+    font-weight: 900;
+    padding: 10px 20px;
+}
+.light-btn {
+    background-color: #3c3c3c;
+    color: white;
+}
+.dyn-btn {
+    font-weight: 700;
+}
+.lang-btn {
+    border: 1px solid #a1a1a1;
+    background: transparent;
+    color: white;
+    font-weight: 900;
+}
+.strap {
+    background-image: -webkit-gradient(linear, left top, right top, from(#af2896), to(#509bf5));
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+    display: flex;
+    padding: 1rem;
+}
+.log-top {
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.main-box {
+    padding: .8rem;
+}
+.artist-box {
+    margin-top: -50px;
+    padding: 0;
+}
+.log-btn {
+    padding: 15px 30px;
+    font-weight: 800;
+    border-radius: 50px;
+}
+.sign-btn {
+    background: transparent;
+    color: #a1a1a1;
+}
+.artist-card:hover {
+    background-color: #3333336d;
+}
+.artist-card img {
+    display: block;
+    border-radius: 50%;
+}
+.gray {
+    margin-top: 7px;
+    color: #a1a1a1;
+}
+.artist-card {
+    position: relative;
+    padding: .7rem;
+    width: 180px;
+    border-radius: 8px;
+    transition: .3s all ease;
+    display: inline-block;
+}
+.artist-card .artist-img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.artist-card .play-btn {
+    position: absolute;
+    top: 8rem;
+    right: 1rem;
+    width: 70px;
+    height: auto;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+.artist-card:hover .play-btn {
+    opacity: 1;
+    /* Show on hover */
+}
+.right-links {
+    padding: 1rem;
+    gap: 4rem;
+}
+.right-links ul li {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #a1a1a1;
+}
+.right-links ul .head {
+    color: white;
+    font-weight: 700;
+}
+.right-links ul li a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-links ul li a img {
+    width: 22px;
+}
+.right-links ul li a:hover {
+    background-color: rgb(114, 114, 114);
+}
+hr {
+    /* color: #a1a1a1; */
+    height: 1px;
+    border: none;
+    background-color: #a1a1a171;
+}
+.top-nav {
+    padding: 1.5rem;
+    /* background-color: #121212; */
+    background: transparent;
+}
+.top-nav h5 {
+    text-align: center;
+}
+.login-contain {
+    padding: 0;
+    margin: 0;
+    /* height: 100vw; */
+}
+.login-box {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 60vw;
+    padding: 4rem 10rem;
+    background-color: #121212;
+    height: max-content;
+}
+.login-box h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.login-box .btn-sec {
+    display: grid;
+    gap: 1rem;
+}
+.login-box .btn-sec .log-btn {
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    margin: auto;
+    padding: .8rem 1rem;
+    font-size: 1rem;
+    width: 70%;
+}
+.login-box .log-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+.login-box .log-form label {
+    align-self: start;
+    margin-bottom: 8px;
+}
+.login-box .log-form input {
+    padding: .8rem;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    width: 100%;
+}
+.login-box .log-btn {
+    background-color: #1ED760;
+    width: 100%;
+}
+.list .artist-search input {
+    background-color: #a1a1a12e;
+    color: white;
+    border: none;
+    width: 68%;
+    margin-right: .7rem;
+    padding: 7px;
+}
+.artist-list img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.artist-box .about-artist {
+    padding: 3rem 2rem 1rem 2rem;
+    background: url(https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: fixed;
+    height: 20vw;
+}
+.artist-box .about-artist h1 {
+    font-size: 5rem;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+.song-list,
+.artist,
+.playlist {
+    padding: .3rem 1.5rem;
+}
+.song-list ol {
+    padding: .8rem 1.5rem;
+}
+.song-list ol li {
+    margin-bottom: .4rem;
+    padding: 8px 18px;
+}
+.song-list ol li img {
+    width: 40px;
+    border-radius: 8px;
+    margin: 0 1rem;
+}
+.song-list ol li:hover {
+    color: #1ED760;
+    background-color: #a1a1a139;
+}
+.songs {
+    background: linear-gradient(to bottom, #b11b1b88, #000000);
+}
+.player {
+    background-color: #000000 !important;
+    padding: 0 1rem;
+    gap: 2rem;
+    bottom: 0;  
+}
+.play-bar img {
+    width: 47px;
+    padding: 0 15px;
+}
+.progress,
+.vol-controller {
+    width: 100%;
+    background-color: #1ED760;
+    height: 3px;
+}
+.play-bar{
+    width: 56vw;
+}
+.name-logo,.hamburg{
+display:none;
+}
+.play-controls{
+    margin: auto;width: 17vw;
+}
+.scrolled {
+    background-color: black; /* Change to black when scrolled */
+}
+@media only screen and (max-width: 768px) {
+
+    .left,.log-sec,.play-btn,.right-links,.right-bootom-links,.playing-song,.controls,.navigation{
+        display: none;
+    }
+    
+    .name-logo,.hamburg{
+        display:block;
+        
+        }
+        .hamburg{
+            position:    absolute;
+            right: 10px;
+        }
+    .right{
+        width: 100%;
+    }
+    .container {
+        padding: 0;
+    }
+    .artist-box .about-artist h1 {
+        font-size: 2rem;
+    }
+    .artist-box .about-artist {
+        height: 30vh;
+        padding: 3rem 0rem 0rem 2rem;
+    
+    }
+    .links{
+        justify-content: center;
+    }
+    .song-list,
+    .artist,
+    .playlist {
+        padding: .5rem 1rem;
+    }   
+    .song-list ol {
+        padding: 0rem .1rem;
+    }
+    
+    .song-list ol li {
+        font-size: .8rem;
+        margin-bottom: .1rem;
+        padding: 8px 10px;
+    }
+    .player{
+    
+    gap: 0;
+    }
+    .play-bar{
+        width: 100%;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }   
+    .play-controls{
+    width: 70%;
+    margin: auto;
+    }
+.log-top{
+    /* background-color: #000000; */
+
+}}
+    

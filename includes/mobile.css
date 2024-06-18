@@ -1,0 +1,62 @@
+@media only screen and (max-width: 768px) {
+
+.left,.log-sec,.play-btn,.right-links,.right-bootom-links,.playing-song,.controls{
+    display: none;
+}
+
+#name-logo{
+    display:block;
+    }
+.right{
+    width: 100%;
+}
+.container {
+    padding: 0;
+}
+.artist-box .about-artist h1 {
+    font-size: 2rem;
+}
+.artist-box .about-artist {
+    height: 30vh;
+    padding: 3rem 0rem 0rem 2rem;
+
+}
+.links{
+    justify-content: center;
+}
+.song-list,
+.artist,
+.playlist {
+    padding: .5rem 1rem;
+}   
+.song-list ol {
+    padding: 0rem .1rem;
+}
+
+.song-list ol li {
+    font-size: .8rem;
+    margin-bottom: .1rem;
+    padding: 8px 10px;
+}
+.player{
+
+gap: 0;
+}
+#play-bar{
+    width: 100%;
+    margin-top:10px;
+    margin-bottom: 10px;
+}   
+#play-controls{
+width: 70%;
+margin: auto;
+}}
+.play-bar{
+    width: 56vw;
+}
+.name-logo{
+display:none;
+}
+.play-controls{
+    margin: auto;width: 17vw;
+}
